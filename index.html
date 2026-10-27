@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PINCHme — Free products to try, every day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=47">
+</head>
+<body>
+
+  <!-- Utility bar: audience switch (Klarna "For shoppers / For business") -->
+  <div class="utility">
+    <div class="wrap">
+      <a href="index.html" class="active">For members</a>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo"><img src="assets/logo.svg" alt="PINCHme"></a>
+      <ul class="nav-links">
+        <li><span class="nav-static">About us</span></li>
+        <li><span class="nav-static">Past Samples</span></li>
+        <li><span class="nav-static">Blog</span></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost btn-sm hide-sm">Log in</a>
+        <a href="#join" class="btn btn-ink btn-sm">Become a PINCHer</a>
+        <button class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero carousel -->
+    <div class="hero wrap">
+      <div class="carousel" data-carousel>
+        <div class="slides">
+          <!-- Banners from Figma (Rmajd9hGHVozonJUrbO4kp, node 15:729) -->
+          <article class="slide slide--split" style="--slide-bg: #ecece8;">
+            <div class="slide-copy">
+              <h1 class="hero-title">We send you free products. You tell us what you think.</h1>
+              <p class="hero-sub">Apply for samples, get qualified, and build your box. Once you reach 4 products, your box ships 100% free.</p>
+              <form class="hero-form" onsubmit="event.preventDefault();">
+                <input class="hero-email" type="email" placeholder="Enter Email" aria-label="Email address">
+                <button class="hero-btn" type="submit">Become a PINCHer</button>
+              </form>
+            </div>
+            <div class="slide-visual slide-visual--phone">
+              <img src="assets/hero/box-phone.png?v=2" alt="PINCHme app showing a box with 3 of 4 products picked">
+            </div>
+          </article>
+          <article class="slide slide--split" style="--slide-bg: var(--blush);">
+            <div class="slide-copy">
+              <h2 class="hero-title">Sample Thursday!<span class="hero-title-sub">No Tricks Just Treats</span></h2>
+              <form class="hero-form" onsubmit="event.preventDefault();">
+                <input class="hero-email" type="email" placeholder="Enter Email" aria-label="Email address">
+                <button class="hero-btn" type="submit">Become a PINCHer</button>
+              </form>
+            </div>
+            <div class="slide-visual slide-visual--ghost">
+              <img src="assets/hero/sample-thursday.png?v=2" alt="A PINCHme box dressed as a ghost">
+            </div>
+          </article>
+          <article class="slide slide--split slide--outlined" style="--slide-bg: #ffffff;">
+            <div class="slide-copy">
+              <h2 class="hero-title hero-title--xl">GIVEAWAY ALERT!</h2>
+              <p class="hero-sub">Don’t miss out on this amazing Mr.Lulu Beauty pack!</p>
+              <div class="hero-form">
+                <a href="#offers" class="hero-btn">Get Here
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="slide-visual slide-visual--lulu">
+              <img src="assets/hero/mr-lulu-giveaway.png?v=2" alt="Mr. Lulu beauty pack: pouch with five skincare products">
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="carousel-ui">
+        <div class="dots"></div>
+      </div>
+    </div>
+
+    <!-- 2. Community scale + logos -->
+    <section class="trust-section">
+      <div class="wrap">
+        <div class="trust reveal">
+          <h2 class="h-lg">You'd be in good company</h2>
+          <div class="stats">
+            <div class="stat"><strong>12M+</strong><span>Profiled members</span></div>
+            <div class="stat"><strong>90M+</strong><span>Samples distributed</span></div>
+            <div class="stat"><strong>400+</strong><span>Brands represented</span></div>
+            <div class="stat"><strong>2013</strong><span>Sampling since</span></div>
+          </div>
+        </div>
+        <div class="marquee" aria-label="Brands on PINCHme">
+          <div class="marquee-track" style="--dur: 150s;">
+            <span class="logo-chip"><img src="assets/logos/001_3M.png" alt="3M" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/003_Johnson_Johnson.png" alt="Johnson &amp; Johnson" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/005_Coty.png" alt="Coty" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/007_Beiersdorf.png" alt="Beiersdorf" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/009_Nestle.png" alt="Nestle" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/011_P_G.png" alt="P&amp;G" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/013_Bellway.png" alt="Bellway" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/015_Biore.png" alt="Biore" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/017_Blistex.png" alt="Blistex" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/019_Blue_Diamond.png" alt="Blue Diamond" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/021_Braun.png" alt="Braun" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/023_Bvlgari.png" alt="Bvlgari" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/025_Carols_Daughter.png" alt="Carol's Daughter" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/027_Church_Dwight.png" alt="Church &amp; Dwight" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/029_Clean_Clear.png" alt="Clean &amp; Clear" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/031_Compeed.png" alt="Compeed" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/033_Applaws.png" alt="Applaws" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/035_Crunchmaster.png" alt="Crunchmaster" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/037_Dove.png" alt="Dove" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/039_Energizer.png" alt="Energizer" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/041_Eucerin.png" alt="Eucerin" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/043_First_Free.png" alt="First Free" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/045_Gevalia.png" alt="Gevalia" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/047_Hallmark.png" alt="Hallmark" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/049_Harmless_Harvest.png" alt="Harmless Harvest" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/051_Hathaspace.png" alt="Hathaspace" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/053_Healist.png" alt="Healist" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/055_Hero.png" alt="Hero" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/057_Hint.png" alt="Hint" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/059_HU.png" alt="HU" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/061_Klorane.png" alt="Klorane" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/063_Lancer.png" alt="Lancer" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/065_Living_Proof.png" alt="Living Proof" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/067_Kelloggs.png" alt="Kellogg's" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/069_Algenist.png" alt="Algenist" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/071_Beech_Nut.png" alt="Beech-Nut" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/073_Luzianne.png" alt="Luzianne" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/075_Nacho.png" alt="Nacho" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/077_Method.png" alt="Method" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/079_Mr_Clean.png" alt="Mr. Clean" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/081_Neutrogena.png" alt="Neutrogena" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/083_Nivea.png" alt="Nivea" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/085_Ocean_Spray.png" alt="Ocean Spray" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/087_One.png" alt="One" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/089_Aqua_Velva.png" alt="Aqua Velva" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/091_Prima.png" alt="Prima" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/093_Purely_Elizabeth.png" alt="Purely Elizabeth" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/095_Quaker.png" alt="Quaker" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/097_Reckitt.png" alt="Reckitt" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/099_Ricola.png" alt="Ricola" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/101_RoC.png" alt="RoC" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/103_SC_Johnson.png" alt="SC Johnson" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/105_Shani_Darden.png" alt="Shani Darden" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/107_SkinnyPop.png" alt="SkinnyPop" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/109_Skylar.png" alt="Skylar" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/111_Starbucks.png" alt="Starbucks" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/113_Therabody.png" alt="Therabody" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/115_ILIA.png" alt="ILIA" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/117_Verb.png" alt="Verb" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/119_WeightWatchers.png" alt="WeightWatchers" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/001_3M.png" aria-hidden="true" alt="3M" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/003_Johnson_Johnson.png" aria-hidden="true" alt="Johnson &amp; Johnson" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/005_Coty.png" aria-hidden="true" alt="Coty" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/007_Beiersdorf.png" aria-hidden="true" alt="Beiersdorf" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/009_Nestle.png" aria-hidden="true" alt="Nestle" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/011_P_G.png" aria-hidden="true" alt="P&amp;G" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/013_Bellway.png" aria-hidden="true" alt="Bellway" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/015_Biore.png" aria-hidden="true" alt="Biore" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/017_Blistex.png" aria-hidden="true" alt="Blistex" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/019_Blue_Diamond.png" aria-hidden="true" alt="Blue Diamond" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/021_Braun.png" aria-hidden="true" alt="Braun" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/023_Bvlgari.png" aria-hidden="true" alt="Bvlgari" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/025_Carols_Daughter.png" aria-hidden="true" alt="Carol's Daughter" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/027_Church_Dwight.png" aria-hidden="true" alt="Church &amp; Dwight" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/029_Clean_Clear.png" aria-hidden="true" alt="Clean &amp; Clear" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/031_Compeed.png" aria-hidden="true" alt="Compeed" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/033_Applaws.png" aria-hidden="true" alt="Applaws" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/035_Crunchmaster.png" aria-hidden="true" alt="Crunchmaster" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/037_Dove.png" aria-hidden="true" alt="Dove" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/039_Energizer.png" aria-hidden="true" alt="Energizer" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/041_Eucerin.png" aria-hidden="true" alt="Eucerin" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/043_First_Free.png" aria-hidden="true" alt="First Free" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/045_Gevalia.png" aria-hidden="true" alt="Gevalia" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/047_Hallmark.png" aria-hidden="true" alt="Hallmark" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/049_Harmless_Harvest.png" aria-hidden="true" alt="Harmless Harvest" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/051_Hathaspace.png" aria-hidden="true" alt="Hathaspace" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/053_Healist.png" aria-hidden="true" alt="Healist" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/055_Hero.png" aria-hidden="true" alt="Hero" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/057_Hint.png" aria-hidden="true" alt="Hint" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/059_HU.png" aria-hidden="true" alt="HU" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/061_Klorane.png" aria-hidden="true" alt="Klorane" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/063_Lancer.png" aria-hidden="true" alt="Lancer" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/065_Living_Proof.png" aria-hidden="true" alt="Living Proof" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/067_Kelloggs.png" aria-hidden="true" alt="Kellogg's" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/069_Algenist.png" aria-hidden="true" alt="Algenist" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/071_Beech_Nut.png" aria-hidden="true" alt="Beech-Nut" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/073_Luzianne.png" aria-hidden="true" alt="Luzianne" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/075_Nacho.png" aria-hidden="true" alt="Nacho" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/077_Method.png" aria-hidden="true" alt="Method" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/079_Mr_Clean.png" aria-hidden="true" alt="Mr. Clean" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/081_Neutrogena.png" aria-hidden="true" alt="Neutrogena" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/083_Nivea.png" aria-hidden="true" alt="Nivea" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/085_Ocean_Spray.png" aria-hidden="true" alt="Ocean Spray" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/087_One.png" aria-hidden="true" alt="One" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/089_Aqua_Velva.png" aria-hidden="true" alt="Aqua Velva" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/091_Prima.png" aria-hidden="true" alt="Prima" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/093_Purely_Elizabeth.png" aria-hidden="true" alt="Purely Elizabeth" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/095_Quaker.png" aria-hidden="true" alt="Quaker" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/097_Reckitt.png" aria-hidden="true" alt="Reckitt" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/099_Ricola.png" aria-hidden="true" alt="Ricola" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/101_RoC.png" aria-hidden="true" alt="RoC" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/103_SC_Johnson.png" aria-hidden="true" alt="SC Johnson" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/105_Shani_Darden.png" aria-hidden="true" alt="Shani Darden" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/107_SkinnyPop.png" aria-hidden="true" alt="SkinnyPop" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/109_Skylar.png" aria-hidden="true" alt="Skylar" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/111_Starbucks.png" aria-hidden="true" alt="Starbucks" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/113_Therabody.png" aria-hidden="true" alt="Therabody" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/115_ILIA.png" aria-hidden="true" alt="ILIA" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/117_Verb.png" aria-hidden="true" alt="Verb" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/119_WeightWatchers.png" aria-hidden="true" alt="WeightWatchers" loading="lazy"></span>
+          </div>
+          <div class="marquee-track reverse" style="--dur: 170s;">
+            <span class="logo-chip"><img src="assets/logos/002_Unilever.png" alt="Unilever" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/004_Clorox.png" alt="Clorox" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/006_Kimberly_Clark.png" alt="Kimberly Clark" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/008_Kraft_Heinz.png" alt="Kraft Heinz" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/010_Mars.png" alt="Mars" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/012_LOreal.png" alt="L'Oréal" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/014_Beyond_Meat.png" alt="Beyond Meat" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/016_Biotrue.png" alt="Biotrue" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/018_Blue_Buffalo.png" alt="Blue Buffalo" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/020_Boiron.png" alt="Boiron" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/022_Brim.png" alt="Brim" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/024_Burts_Bees.png" alt="Burt's Bees" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/026_Cetaphil.png" alt="Cetaphil" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/028_Clairol.png" alt="Clairol" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/030_Aveeno.png" alt="Aveeno" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/032_Conair.png" alt="Conair" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/034_Covergirl.png" alt="Covergirl" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/036_Crux.png" alt="Crux" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/038_Dr_Dennis_Gross.png" alt="Dr. Dennis Gross" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/040_Essie.png" alt="Essie" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/042_Eva_NYC.png" alt="Eva NYC" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/044_Garnier.png" alt="Garnier" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/046_Glo_Science.png" alt="Glo Science" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/048_Haribo.png" alt="Haribo" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/050_Hartz.png" alt="Hartz" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/052_Head_Shoulders.png" alt="Head &amp; Shoulders" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/054_Hello_Fresh.png" alt="Hello Fresh" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/056_Hills.png" alt="Hill's" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/058_Hunts.png" alt="Hunt's" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/060_Impossible.png" alt="Impossible" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/062_Aquaphor.png" alt="Aquaphor" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/064_Lesser_Evil.png" alt="Lesser Evil" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/066_John_Frieda.png" alt="John Frieda" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/068_Pfizer.png" alt="Pfizer" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/070_Barilla.png" alt="Barilla" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/072_Lumify.png" alt="Lumify" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/074_Make_Up_For_Ever.png" alt="Make Up For Ever" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/076_McCormick.png" alt="McCormick" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/078_Moroccanoil.png" alt="Moroccanoil" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/080_Neocell.png" alt="Neocell" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/082_Nexcare.png" alt="Nexcare" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/084_No7.png" alt="No7" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/086_Olay.png" alt="Olay" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/088_Organic_Valley.png" alt="Organic Valley" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/090_PepsiCo.png" alt="PepsiCo" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/092_Purell.png" alt="Purell" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/094_Purina.png" alt="Purina" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/096_Remedy.png" alt="Remedy" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/098_Revlon.png" alt="Revlon" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/100_Risa.png" alt="Risa" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/102_RXBAR.png" alt="RXBAR" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/104_Sephora.png" alt="Sephora" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/106_SheaMoisture.png" alt="SheaMoisture" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/108_Skippy.png" alt="Skippy" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/110_SlimFast.png" alt="SlimFast" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/112_The_Inkey_List.png" alt="The Inkey List" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/114_bareMinerals.png" alt="bareMinerals" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/116_Band_Aid.png" alt="Band-Aid" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/118_Walgreens.png" alt="Walgreens" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/120_Wellness.png" alt="Wellness" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/002_Unilever.png" aria-hidden="true" alt="Unilever" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/004_Clorox.png" aria-hidden="true" alt="Clorox" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/006_Kimberly_Clark.png" aria-hidden="true" alt="Kimberly Clark" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/008_Kraft_Heinz.png" aria-hidden="true" alt="Kraft Heinz" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/010_Mars.png" aria-hidden="true" alt="Mars" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/012_LOreal.png" aria-hidden="true" alt="L'Oréal" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/014_Beyond_Meat.png" aria-hidden="true" alt="Beyond Meat" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/016_Biotrue.png" aria-hidden="true" alt="Biotrue" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/018_Blue_Buffalo.png" aria-hidden="true" alt="Blue Buffalo" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/020_Boiron.png" aria-hidden="true" alt="Boiron" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/022_Brim.png" aria-hidden="true" alt="Brim" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/024_Burts_Bees.png" aria-hidden="true" alt="Burt's Bees" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/026_Cetaphil.png" aria-hidden="true" alt="Cetaphil" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/028_Clairol.png" aria-hidden="true" alt="Clairol" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/030_Aveeno.png" aria-hidden="true" alt="Aveeno" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/032_Conair.png" aria-hidden="true" alt="Conair" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/034_Covergirl.png" aria-hidden="true" alt="Covergirl" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/036_Crux.png" aria-hidden="true" alt="Crux" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/038_Dr_Dennis_Gross.png" aria-hidden="true" alt="Dr. Dennis Gross" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/040_Essie.png" aria-hidden="true" alt="Essie" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/042_Eva_NYC.png" aria-hidden="true" alt="Eva NYC" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/044_Garnier.png" aria-hidden="true" alt="Garnier" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/046_Glo_Science.png" aria-hidden="true" alt="Glo Science" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/048_Haribo.png" aria-hidden="true" alt="Haribo" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/050_Hartz.png" aria-hidden="true" alt="Hartz" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/052_Head_Shoulders.png" aria-hidden="true" alt="Head &amp; Shoulders" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/054_Hello_Fresh.png" aria-hidden="true" alt="Hello Fresh" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/056_Hills.png" aria-hidden="true" alt="Hill's" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/058_Hunts.png" aria-hidden="true" alt="Hunt's" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/060_Impossible.png" aria-hidden="true" alt="Impossible" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/062_Aquaphor.png" aria-hidden="true" alt="Aquaphor" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/064_Lesser_Evil.png" aria-hidden="true" alt="Lesser Evil" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/066_John_Frieda.png" aria-hidden="true" alt="John Frieda" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/068_Pfizer.png" aria-hidden="true" alt="Pfizer" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/070_Barilla.png" aria-hidden="true" alt="Barilla" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/072_Lumify.png" aria-hidden="true" alt="Lumify" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/074_Make_Up_For_Ever.png" aria-hidden="true" alt="Make Up For Ever" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/076_McCormick.png" aria-hidden="true" alt="McCormick" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/078_Moroccanoil.png" aria-hidden="true" alt="Moroccanoil" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/080_Neocell.png" aria-hidden="true" alt="Neocell" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/082_Nexcare.png" aria-hidden="true" alt="Nexcare" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/084_No7.png" aria-hidden="true" alt="No7" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/086_Olay.png" aria-hidden="true" alt="Olay" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/088_Organic_Valley.png" aria-hidden="true" alt="Organic Valley" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/090_PepsiCo.png" aria-hidden="true" alt="PepsiCo" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/092_Purell.png" aria-hidden="true" alt="Purell" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/094_Purina.png" aria-hidden="true" alt="Purina" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/096_Remedy.png" aria-hidden="true" alt="Remedy" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/098_Revlon.png" aria-hidden="true" alt="Revlon" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/100_Risa.png" aria-hidden="true" alt="Risa" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/102_RXBAR.png" aria-hidden="true" alt="RXBAR" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/104_Sephora.png" aria-hidden="true" alt="Sephora" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/106_SheaMoisture.png" aria-hidden="true" alt="SheaMoisture" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/108_Skippy.png" aria-hidden="true" alt="Skippy" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/110_SlimFast.png" aria-hidden="true" alt="SlimFast" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/112_The_Inkey_List.png" aria-hidden="true" alt="The Inkey List" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/114_bareMinerals.png" aria-hidden="true" alt="bareMinerals" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/116_Band_Aid.png" aria-hidden="true" alt="Band-Aid" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/118_Walgreens.png" aria-hidden="true" alt="Walgreens" loading="lazy"></span>
+            <span class="logo-chip"><img src="assets/logos/120_Wellness.png" aria-hidden="true" alt="Wellness" loading="lazy"></span>
+          </div>
+        </div>      </div>
+    </section>
+
+    <!-- 3. How it works (pinned steps, Klarna-style) -->
+    <section id="how" class="how">
+      <div class="how-track" data-how>
+        <div class="how-sticky">
+          <div class="wrap">
+            <div class="how-head">
+              <span class="eyebrow">How it works</span>
+              <h2 class="h-lg" style="margin-top: 12px;">Four steps to a free box</h2>
+              <p class="lead">New samples drop every day. Here's how to turn them into a box that ships free.</p>
+            </div>
+            <div class="how-grid">
+              <div class="how-dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i></div>
+
+              <div class="how-media">
+                <figure class="how-frame is-active">
+                  <img src="https://images.unsplash.com/photo-1767611019548-218916466203?w=1200&q=80&auto=format&fit=crop" alt="">
+                  <div class="how-widget">
+                    <div class="w-row">Applied <span class="radio"></span></div>
+                    <div class="w-row on">Qualified <span class="radio"></span></div>
+                  </div>
+                </figure>
+                <figure class="how-frame">
+                  <img src="https://images.unsplash.com/photo-1787569499510-ef18cc7ba7a5?w=1200&q=80&auto=format&fit=crop" alt="">
+                  <div class="how-widget">
+                    <div class="w-box"><i>✓</i><i>✓</i><i>✓</i><i>✓</i></div>
+                    <div class="w-row on">Box is full <small>4 of 4</small></div>
+                  </div>
+                </figure>
+                <figure class="how-frame">
+                  <img src="https://images.unsplash.com/photo-1595246135406-803418233494?w=1200&q=80&auto=format&fit=crop" alt="">
+                  <div class="how-widget">
+                    <div class="w-row">Shipping <small>$0.00</small></div>
+                    <div class="w-row on">On its way <span class="radio"></span></div>
+                  </div>
+                </figure>
+                <figure class="how-frame">
+                  <img src="https://images.unsplash.com/photo-1599847987657-881f11b92a75?w=1200&q=80&auto=format&fit=crop" alt="">
+                  <div class="how-widget">
+                    <div class="w-row"><span class="w-stars">★★★★★</span></div>
+                    <div class="w-row on">More offers unlocked <span class="radio"></span></div>
+                  </div>
+                </figure>
+              </div>
+
+              <ol class="how-list">
+                <li class="how-item is-active">
+                  <button class="how-title" type="button">Apply &amp; get qualified</button>
+                  <p>The more you apply, the more products you can qualify for.</p>
+                  <img class="inline" src="https://images.unsplash.com/photo-1767611019548-218916466203?w=900&q=80&auto=format&fit=crop" alt="">
+                </li>
+                <li class="how-item">
+                  <button class="how-title" type="button">Build your 4-product box</button>
+                  <p>Keep adding your qualified products until you reach 4 samples.</p>
+                  <img class="inline" src="https://images.unsplash.com/photo-1787569499510-ef18cc7ba7a5?w=900&q=80&auto=format&fit=crop" alt="">
+                </li>
+                <li class="how-item">
+                  <button class="how-title" type="button">We ship it free</button>
+                  <p>Once your box is full, we ship it 100% free.</p>
+                  <img class="inline" src="https://images.unsplash.com/photo-1595246135406-803418233494?w=900&q=80&auto=format&fit=crop" alt="">
+                </li>
+                <li class="how-item">
+                  <button class="how-title" type="button">Try &amp; share your feedback</button>
+                  <p>Test your samples and share your feedback. Your reviews help unlock even more offers.</p>
+                  <img class="inline" src="https://images.unsplash.com/photo-1599847987657-881f11b92a75?w=900&q=80&auto=format&fit=crop" alt="">
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers rail -->
+    <section id="offers" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="rail-head">
+          <div>
+            <span class="eyebrow">Recently on PINCHme</span>
+            <h2 class="h-md" style="margin-top: 10px;">Here's what's been free lately</h2>
+          </div>
+        </div>
+        <div class="rail">
+          <article class="offer">
+            <span class="sticker">Claim yours</span>
+            <img src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?w=800&q=80&auto=format&fit=crop" alt="">
+            <div class="offer-body">
+              <div class="offer-brand">Clinique</div>
+              <div class="offer-name">All About Clean facial soap</div>
+              <div class="offer-meta"><span>Posted on Instagram</span><span>Date TBC</span></div>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="sticker pink">Claim yours now!</span>
+            <img src="https://images.unsplash.com/photo-1619451427882-6aaaded0cc61?w=800&q=80&auto=format&fit=crop" alt="">
+            <div class="offer-body">
+              <div class="offer-brand">Palmer's</div>
+              <div class="offer-name">Cocoa Butter Formula</div>
+              <div class="offer-meta"><span>Posted on Instagram</span><span>Date TBC</span></div>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="sticker sun">Giveaway</span>
+            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80&auto=format&fit=crop" alt="">
+            <div class="offer-body">
+              <div class="offer-brand">Mr. Lulu</div>
+              <div class="offer-name">Beauty pack giveaway</div>
+              <div class="offer-meta"><span>Posted on Instagram</span><span>Date TBC</span></div>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="sticker cobalt">Sample Thursday</span>
+            <img src="https://images.unsplash.com/photo-1677735299510-5764bda9d346?w=800&q=80&auto=format&fit=crop" alt="">
+            <div class="offer-body">
+              <div class="offer-brand">Weekly drop</div>
+              <div class="offer-name">New samples every Thursday</div>
+              <div class="offer-meta"><span>Posted on Instagram</span><span>Weekly</span></div>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="sticker">New</span>
+            <img src="https://images.unsplash.com/photo-1787569499510-ef18cc7ba7a5?w=800&q=80&auto=format&fit=crop" alt="">
+            <div class="offer-body">
+              <div class="offer-brand">Your next offer</div>
+              <div class="offer-name">New samples drop every day</div>
+              <div class="offer-meta"><span>Members only</span><span>Daily</span></div>
+            </div>
+          </article>
+        </div>      </div>
+    </section>
+
+    <!-- 4. Why it's free (text only, centred; lines light up as they scroll in) -->
+    <section id="why" class="why-text">
+      <div class="wrap">
+        <span class="eyebrow">Why it's free</span>
+        <p class="why-lines">
+          <span class="why-line"><em>You give</em> your honest opinion.</span>
+          <span class="why-line"><em>You get</em> free products, shipped free.</span>
+          <span class="why-line"><em>Your reviews unlock</em> even more offers.</span>
+        </p>
+        <p class="why-quote">Your feedback is invaluable in shaping the future of these brands<br> and the products they offer.</p>
+        <ul class="why-facts">
+          <li><svg class="why-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Free to join</li>
+          <li><svg class="why-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>No credit card</li>
+          <li><svg class="why-check" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Ships 100% free</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Personalised offers (bento) -->
+    <section id="perks" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Member perks</span>
+          <h2 class="h-lg" style="margin-top: 12px;">Don't miss your personalised offers</h2>
+        </div>
+        <!-- Perk cards from Figma (Rmajd9hGHVozonJUrbO4kp, node 21:874): visual card, caption below -->
+        <div class="perks">
+          <article class="perk reveal">
+            <div class="perk-card"><img src="assets/perks/build-your-box.png" alt="A fan of sample products"></div>
+            <h3>Build your box</h3>
+            <p>Get qualified for 4 products to get your box.</p>
+          </article>
+          <article class="perk reveal">
+            <div class="perk-card"><img src="assets/perks/bonus-products.png" alt="A stack of samples with an Add more card on top"></div>
+            <h3>Bonus products</h3>
+            <p>Add extra samples to fill your box faster.</p>
+          </article>
+          <article class="perk reveal">
+            <div class="perk-card"><img src="assets/perks/gift-card.png" alt="A PINCHme gift card"></div>
+            <h3>Gift cards</h3>
+            <p>Complete extra activities &amp; surveys to earn cash.</p>
+          </article>
+          <article class="perk reveal">
+            <div class="perk-card perk-card--review">
+              <div class="review-card" aria-hidden="true">
+                <div class="review-top"><b>Review</b><span class="review-stars">★★★★<i>★</i></span></div>
+                <div class="review-box"><p class="review-text">I love pinchme, always introduce me to new products from skin care to makeup, and Laundry detergent, and I am very great full to be trying and tasting Free samples and actual sizes of products. I high...</p></div>
+              </div>
+            </div>
+            <h3>Member perks</h3>
+            <p>Try products, share feedback &amp; unlock future offers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PINCHers on camera -->
+    <section id="community" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="social-head">
+          <div>
+            <span class="eyebrow">#happypincher</span>
+            <h2 class="h-lg" style="margin-top: 12px;">PINCHers on camera</h2>
+          </div>
+        </div>
+        <div class="reel-marquee" aria-label="Member videos">
+          <!-- Member clips from @pinchme, trimmed to 15s loops in assets/reels. Each card plays muted while on screen -->
+          <div class="reel-track" style="--dur: 40s;">
+            <figure class="reel"><video src="assets/reels/reel-1.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel"><video src="assets/reels/reel-2.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel"><video src="assets/reels/reel-3.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel"><video src="assets/reels/reel-4.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel"><video src="assets/reels/reel-5.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel" aria-hidden="true"><video src="assets/reels/reel-1.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel" aria-hidden="true"><video src="assets/reels/reel-2.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel" aria-hidden="true"><video src="assets/reels/reel-3.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel" aria-hidden="true"><video src="assets/reels/reel-4.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+            <figure class="reel" aria-hidden="true"><video src="assets/reels/reel-5.mp4" muted loop playsinline preload="metadata" aria-hidden="true"></video></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Final CTA + FAQ -->
+    <section id="join" style="padding-top: 0;">
+      <div class="wrap">
+        <!-- Final CTA (Wise "Take Wise everywhere": centred headline, QR, store buttons) -->
+        <div class="cta-app reveal">
+          <h2 class="cta-app-title">Your first free box is 4 products away</h2>
+          <p class="cta-app-sub">Join 12 million+ PINCHers. Free to join, no credit card required.</p>
+          <div class="cta-qr">
+            <span>Scan to get PINCHme</span>
+            <img src="assets/qr-pinchme.svg" width="112" height="112" alt="QR code linking to pinchme.com">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="section-head center">
+          <h2 class="h-lg">What's the catch?</h2>
+          <p class="lead">There isn't one. Here's the fine print, in plain words.</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Is it really free? <span class="plus">+</span></summary>
+            <p>Yes. It's free to join, and once your box reaches 4 products we ship it 100% free.</p>
+          </details>
+          <details>
+            <summary>Do I need a credit card? <span class="plus">+</span></summary>
+            <p>No. No credit card is required to join.</p>
+          </details>
+          <details>
+            <summary>When does my box ship? <span class="plus">+</span></summary>
+            <p>As soon as you've qualified for 4 products. You can add bonus products to fill it faster.</p>
+          </details>
+          <details>
+            <summary>What do I have to do? <span class="plus">+</span></summary>
+            <p>Apply for samples, try them, and share your feedback. Your reviews help unlock even more offers.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><img src="assets/logo.svg" alt="PINCHme"></a>
+          <p class="muted" style="max-width: 32ch; line-height: 1.5;">Free products from brands you love, since 2013.</p>
+          <!-- Brand page link hidden until brands.html is ready to publish:
+          <a href="brands.html" class="partner-link">Are you a brand? Partner with us →</a> -->
+        </div>
+        <div>
+          <h4>PINCHme</h4>
+          <ul><li><a href="#">About PINCHme</a></li><li><a href="#">Past Samples</a></li><li><a href="#">Blog</a></li></ul>
+        </div>
+        <div>
+          <h4>Community</h4>
+          <ul><li><a href="#">TikTok</a></li><li><a href="#">YouTube</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">Pinterest</a></li></ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul><li><a href="#">Terms of Service</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Cookie Settings</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© PINCHme 2026. All Rights Reserved.</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js?v=47"></script>
+</body>
+</html>

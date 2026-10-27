@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Local tooling
+.claude/
+
+# Not for publishing yet (the repo is public):
+# brand page is unpublished
+brands.html
+# member reels saved from Instagram, pending permission
+assets/reels/
